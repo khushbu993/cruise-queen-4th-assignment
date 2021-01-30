@@ -18,7 +18,7 @@
 </head>
 
 <body>
-    <!--Header and Menu Section-->
+    <!--Header and Menu Section Start -->
     <header class="container fw-bold">
         <nav>
             <ul>
@@ -29,9 +29,9 @@
             </ul>
         </nav>
     </header>
-
+    <!--Header and Menu Section End-->
+    <!-- Booking Section Start -->
     <section id="section">
-        <!--Booking Section-->
         <main class="main-content container">
             <!-- Booking Content Section start -->
             <div class="booking-content">
@@ -39,9 +39,10 @@
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
                     industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
                     and
-                    scrambled it to make a type specimen book./p>
+                    scrambled it to make a type specimen book.
+                </p>
             </div>
-            <!-- Booking Content Section start -->
+            <!-- Booking Content Section End -->
             <!-- Booking Form Section start -->
             <div class="booking-form">
                 <h3>Book Ocean Time</h3>
@@ -122,24 +123,24 @@
                 </div>
                 <button id="bookNow" class="btn-style fw-bold btn-info text-white">Book Now</button>
             </div>
-            <!-- Booking Form Section start -->
+            <!-- Booking Form Section End -->
         </main>
     </section>
+    <!-- Booking Section End -->
     <!-- Confirmation Section Start -->
     <div id="confirmation">
-        <h2><span
-                style="background-image: linear-gradient(to right, #f3853c, #fa1500); color: cornsilk; border-radius: 5px; padding: 2px;">BOOKING
-                CONFIRMATION</span> <br><br><span style="color: #0084ff; padding: 10px;">Your ticket is
-                confirmed</span><br><i style="color: forestgreen;font-size: 15px;">Thank you for purchasing ticket</i>
+        <h2><span style="background-image: linear-gradient(to right, #f3853c, #fa1500); color: cornsilk; border-radius: 5px; padding: 2px;">BOOKING CONFIRMATION</span> <br><br><span style="color: #0084ff; padding: 10px;">Your ticket is confirmed</span><br><i style="color: forestgreen;font-size: 15px;">Thank you for purchasing ticket</i>
         </h2>
     </div>
     <!-- Confirmation Section End -->
+    <!-- Footer Section Start -->
     <footer class="footer fw-bold">
         <p>Copyright © CRUISE QUEEN 2021, all rights reserved</p>
     </footer>
+    <!-- Footer Section End -->
     <!-- Raw javascript coding start -->
     <script>
-        //Increase & Decrease Function
+        //Increase & Decrease part
         function ticketQuantityChange(ticketType, isIncrease) {
             const ticketInput = document.getElementById(ticketType + "Count");
             const ticketCount = getInputValue(ticketType);
@@ -153,7 +154,7 @@
             ticketInput.value = ticketNewCount;
             calculateTotal();
         };
-        //Total Calculation function
+        //Total Calculation part
         function calculateTotal() {
             const firstCount = getInputValue('first'); //first class
             const economyCount = getInputValue('economy'); //economy class
@@ -175,9 +176,10 @@
         };
         //BookNow Button Start
         const bookNowButton = document.getElementById("bookNow").addEventListener("click", function () {
+            //booking section
             const sectionBody = document.getElementById("section");
             sectionBody.style.display = 'none';
-
+            //confirmation section
             const confirmation = document.getElementById("confirmation");
             confirmation.style.display = 'block';
         });
