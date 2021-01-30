@@ -5,7 +5,7 @@
     text-decoration: none;
     list-style-type: none;
 }
-body{
+body {
     font-family: 'Roboto', sans-serif;
     background:url("images/ship.png");
     background-repeat: no-repeat;
@@ -33,6 +33,7 @@ nav ul li a{
     padding: 10px;
     text-transform: uppercase;
     margin-left: 30px;
+    text-decoration: none;
 }
 nav ul li a:hover, a.active{
     background-color: #E33741;
@@ -44,7 +45,7 @@ nav ul li a:hover, a.active{
     gap: 70px;
     align-items: center;
 }
-.booking-content{
+.booking-content {
     color: #fff;
     width: 100%;
     float: left;
@@ -97,11 +98,9 @@ nav ul li a:hover, a.active{
     min-width: 300px;
 }
 .plus-minus-btn{
-    color: #3352F2;
-    font-size: 30px;
     padding: 2px;
-    margin: 10px 5px 0px 0px;
-    word-spacing: 20px;
+    margin: 22px 5px 0px 0px;
+    word-spacing: 10px;
 }
 .booking-form .inputs{
     display: grid;
@@ -121,4 +120,24 @@ nav ul li a:hover, a.active{
 .amount{
     display: flex;
     justify-content: space-between;
+}
+.footer{
+    color: white;
+    text-align: center;
+    margin: 5px;
+}
+#confirmation{
+    display: none;
+    height: 372px;
+}
+#confirmation h2{
+    width: 500px;
+    height: 200px;
+    text-align: center;
+    padding: 5px;
+    margin-top: 200px;
+    margin-left: 450px;
+    border-radius: 10px;
+    box-shadow: 5px 10px 20px black;
+    background-color: rgb(255, 255, 255,0.8);
 }
